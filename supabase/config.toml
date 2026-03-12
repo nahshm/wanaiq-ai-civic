@@ -1,0 +1,25 @@
+project_id = "zcnjpczplkbdmmovlrtv"
+
+[functions.content-moderation]
+verify_jwt = false
+
+[functions.send-notifications]
+verify_jwt = false
+
+[functions.seed-kenya-geography]
+verify_jwt = false
+
+[functions.generate-thumbnail]
+verify_jwt = false
+
+[functions.civic-steward]
+verify_jwt = false
+
+[functions.civic-router]
+verify_jwt = false
+
+[functions.civic-brain]
+verify_jwt = false
+
+[functions.civic-ingest]
+verify_jwt = false

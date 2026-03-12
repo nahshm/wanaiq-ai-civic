@@ -1,0 +1,40 @@
+export const createMockPost = (overrides?: Record<string, any>) => ({
+  id: 'test-post-id-123',
+  title: 'Test Post Title',
+  content: 'This is test post content for testing purposes.',
+  author_id: 'test-user-id-123',
+  community_id: 'test-community-id-123',
+  created_at: new Date().toISOString(),
+  updated_at: new Date().toISOString(),
+  upvotes: 10,
+  downvotes: 2,
+  comment_count: 5,
+  tags: ['test', 'civic'],
+  flair: null,
+  is_pinned: false,
+  is_locked: false,
+  media_urls: [],
+  link_url: null,
+  post_type: 'text',
+  sensitivity_level: 'public',
+  verification_id: null,
+  ...overrides,
+});
+
+export const createMockPostWithAuthor = (overrides?: Record<string, any>) => ({
+  ...createMockPost(),
+  profiles: {
+    id: 'test-user-id-123',
+    username: 'testuser',
+    display_name: 'Test User',
+    avatar_url: 'https://example.com/avatar.png',
+    is_verified: false,
+  },
+  communities: {
+    id: 'test-community-id-123',
+    name: 'test-community',
+    display_name: 'Test Community',
+    avatar_url: null,
+  },
+  ...overrides,
+});

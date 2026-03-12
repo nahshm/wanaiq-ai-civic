@@ -1,0 +1,41 @@
+-- Enable RLS on storage.objects if not already enabled
+-- ALTER TABLE storage.objects ENABLE ROW LEVEL SECURITY; -- Commented out for local development
+
+-- Allow authenticated users to upload files to their own folder
+CREATE POLICY "Users can upload to their own folder" ON storage.objects
+FOR INSERT
+TO authenticated
+WITH CHECK (
+  bucket_id = 'media'
+  AND auth.uid()::text = (storage.foldername(name))[1]
+);
+
+-- Allow authenticated users to view/download files from their own folder
+CREATE POLICY "Users can view their own files" ON storage.objects
+FOR SELECT
+TO authenticated
+USING (
+  bucket_id = 'media'
+  AND auth.uid()::text = (storage.foldername(name))[1]
+);
+
+-- Allow authenticated users to update/delete files in their own folder
+CREATE POLICY "Users can update their own files" ON storage.objects
+FOR UPDATE
+TO authenticated
+USING (
+  bucket_id = 'media'
+  AND auth.uid()::text = (storage.foldername(name))[1]
+)
+WITH CHECK (
+  bucket_id = 'media'
+  AND auth.uid()::text = (storage.foldername(name))[1]
+);
+
+CREATE POLICY "Users can delete their own files" ON storage.objects
+FOR DELETE
+TO authenticated
+USING (
+  bucket_id = 'media'
+  AND auth.uid()::text = (storage.foldername(name))[1]
+);

@@ -1,0 +1,13 @@
+﻿node.exe : Invalid project ref format. Must be like 
+`abcdefghijklmnopqrst`.
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program 
+Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Invalid project.. 
+   .hijklmnopqrst`.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Try rerunning the command with --debug to troubleshoot the 
+error.

@@ -1,0 +1,83 @@
+{
+  "_meta": {
+    "last_updated": "2026-02-06",
+    "current_milestone": "M1.1",
+    "sprint_start": "2026-02-03",
+    "sprint_end": "2026-03-28",
+    "total_weeks": 8
+  },
+  
+  "_instructions": "Update task status as: not_started, in_progress, done, blocked",
+  
+  "M1.1_tasks": {
+    "T1.1.1": "not_started",
+    "T1.1.2": "not_started",
+    "T1.1.3": "not_started",
+    "T1.1.4": "not_started",
+    "T1.1.5": "not_started"
+  },
+  
+  "M1.2_tasks": {
+    "T1.2.1": "not_started",
+    "T1.2.2": "not_started",
+    "T1.2.3": "not_started",
+    "T1.2.4": "not_started",
+    "T1.2.5": "not_started",
+    "T1.2.6": "not_started"
+  },
+  
+  "M2.1_tasks": {
+    "T2.1.1": "not_started",
+    "T2.1.2": "not_started",
+    "T2.1.3": "not_started",
+    "T2.1.4": "not_started",
+    "T2.1.5": "not_started",
+    "T2.1.6": "not_started"
+  },
+  
+  "M2.2_tasks": {
+    "T2.2.1": "not_started",
+    "T2.2.2": "not_started",
+    "T2.2.3": "not_started",
+    "T2.2.4": "not_started",
+    "T2.2.5": "not_started",
+    "T2.2.6": "not_started"
+  },
+  
+  "M2.3_tasks": {
+    "T2.3.1": "not_started",
+    "T2.3.2": "not_started",
+    "T2.3.3": "not_started",
+    "T2.3.4": "not_started",
+    "T2.3.5": "not_started",
+    "T2.3.6": "not_started"
+  },
+  
+  "M3.1_tasks": {
+    "T3.1.1": "not_started",
+    "T3.1.2": "not_started",
+    "T3.1.3": "not_started",
+    "T3.1.4": "not_started",
+    "T3.1.5": "not_started",
+    "T3.1.6": "not_started"
+  },
+  
+  "M3.2_tasks": {
+    "T3.2.1": "not_started",
+    "T3.2.2": "not_started",
+    "T3.2.3": "not_started",
+    "T3.2.4": "not_started",
+    "T3.2.5": "not_started",
+    "T3.2.6": "not_started"
+  },
+  
+  "M3.3_tasks": {
+    "T3.3.1": "not_started",
+    "T3.3.2": "not_started",
+    "T3.3.3": "not_started",
+    "T3.3.4": "not_started",
+    "T3.3.5": "not_started",
+    "T3.3.6": "not_started",
+    "T3.3.7": "not_started"
+  }
+}
