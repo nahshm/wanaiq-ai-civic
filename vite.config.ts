@@ -10,15 +10,8 @@ export default defineConfig(({ mode }) => ({
     port: 8080,
   },
 
-  // Source - https://stackoverflow.com/a/69041080
-// Posted by flydev, modified by community. See post 'Timeline' for change history
-// Retrieved 2026-03-13, License - CC BY-SA 4.0
 
-const VITE_BASE_PATH = process.env.VITE_BASE_PATH || '';
-
-export default { 
-  base: `${VITE_BASE_PATH}/dist/`,
-
+ base: process.env.VITE_BASE_PATH || "/dist/",
   
 },
 
