@@ -14,7 +14,7 @@ export default defineConfig(({ mode }) => ({
 // Posted by flydev, modified by community. See post 'Timeline' for change history
 // Retrieved 2026-03-13, License - CC BY-SA 4.0
 
-const ASSET_URL = process.env.VITE_BASE_PATH || '';
+const VITE_BASE_PATH = process.env.VITE_BASE_PATH || '';
 
 export default { 
   base: `${VITE_BASE_PATH}/dist/`,
